@@ -22,8 +22,7 @@ function ConsultarAPI(){
         if (Datos) {
             let DirImagenPokemon = Datos.sprites.front_default;
             MostrarImagen(DirImagenPokemon);
-            let NombreRegistrado = Datos.forms[0].name;
-            MostrarNombre(NombreRegistrado);
+            EntraIntOrString(NombrePoke, Datos);
 
         }
     });
@@ -34,7 +33,28 @@ function MostrarImagen(DirImagenPokemon){
     PictureBoxPokemon.src = DirImagenPokemon;
 }
 
+function EntraIntOrString(NombrePoke, Datos){
+    if (!isNaN(parseInt(NombrePoke))){
+        let NombreRegistrado = Datos.name;
+        MostrarNombre(NombreRegistrado);
+    }
+    else{
+        let NumeroRegistrado = Datos.id;
+        MostrarNumero(NumeroRegistrado);
+    }
+}
+
 function MostrarNombre(NombreRegistrado){
+    const LabelTituloPokemon = document.getElementById("LabelTituloPokemon");
+    LabelTituloPokemon.innerHTML = "Nombre";
     const LabelNombrePokemon = document.getElementById("LabelNombrePokemon");
     LabelNombrePokemon.innerHTML = NombreRegistrado.charAt(0).toUpperCase() + NombreRegistrado.slice(1);
 }
+
+function MostrarNumero(NumeroRegistrado){
+    const LabelTituloPokemon = document.getElementById("LabelTituloPokemon");
+    LabelTituloPokemon.innerHTML = "Numero";
+    const LabelNombrePokemon = document.getElementById("LabelNombrePokemon");
+    LabelNombrePokemon.innerHTML = NumeroRegistrado;
+}
+
