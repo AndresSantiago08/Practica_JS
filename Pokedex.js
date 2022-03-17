@@ -12,8 +12,9 @@ function ConsultarAPI(){
     fetch(Buscar).then((Respuesta) => {
         if (Respuesta.status != "200") {
             console.log(Respuesta);
-            MostrarImagen("./PantallaInicio.png")
-            MostrarNombre("No hay registro")
+            MostrarImagen("./PantallaInicio.png");
+            MostrarNombre("No hay registro");
+            MostrarTiposError();
         }
         else {
             return Respuesta.json();
@@ -234,4 +235,11 @@ function MostrarTipos(Datos){
     LabelTipo1.innerHTML = Tipo1;
     const LabelTipo2 = document.getElementById("LabelTipo2");
     LabelTipo2.innerHTML = Tipo2;
+}
+
+function MostrarTiposError(){
+    const LabelTipo1 = document.getElementById("LabelTipo1");
+    LabelTipo1.innerHTML = "No hay registro";
+    const LabelTipo2 = document.getElementById("LabelTipo2");
+    LabelTipo2.innerHTML = "No hay registro";
 }
