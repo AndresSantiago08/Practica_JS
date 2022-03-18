@@ -15,6 +15,7 @@ function ConsultarAPI(){
             MostrarImagen("./PantallaInicio.png");
             MostrarNombre("No hay registro");
             MostrarTiposError();
+            MostrarEstadisticasError();
         }
         else {
             return Respuesta.json();
@@ -25,6 +26,7 @@ function ConsultarAPI(){
             MostrarImagen(DirImagenPokemon);
             EntraIntOrString(NombrePoke, Datos);
             MostrarTipos(Datos);
+            MostrarEstadisticas(Datos);
         }
     });
 }
@@ -242,4 +244,50 @@ function MostrarTiposError(){
     LabelTipo1.innerHTML = "No hay registro";
     const LabelTipo2 = document.getElementById("LabelTipo2");
     LabelTipo2.innerHTML = "No hay registro";
+}
+
+function MostrarEstadisticas(Datos){
+    let PS = Datos.stats[0].base_stat;
+    const LabelPS = document.getElementById("LabelPS");
+    LabelPS.innerHTML = PS;
+
+    let Ataque = Datos.stats[1].base_stat;
+    const LabelAtaque = document.getElementById("LabelAtaque");
+    LabelAtaque.innerHTML = Ataque;
+
+    let Defensa = Datos.stats[2].base_stat;
+    const LabelDefensa = document.getElementById("LabelDefensa");
+    LabelDefensa.innerHTML = Defensa;
+
+    let AtaqueE = Datos.stats[3].base_stat;
+    const LabelAE = document.getElementById("LabelAE");
+    LabelAE.innerHTML = AtaqueE;
+
+    let DefensaE = Datos.stats[4].base_stat;
+    const LabelDE = document.getElementById("LabelDE");
+    LabelDE.innerHTML = DefensaE;
+
+    let Velocidad = Datos.stats[5].base_stat;
+    const LabelVelocidad = document.getElementById("LabelVelocidad");
+    LabelVelocidad.innerHTML = Velocidad;
+}
+
+function MostrarEstadisticasError(){
+    const LabelPS = document.getElementById("LabelPS");
+    LabelPS.innerHTML = "No hay registro";
+
+    const LabelAtaque = document.getElementById("LabelAtaque");
+    LabelAtaque.innerHTML = "No hay registro";
+
+    const LabelDefensa = document.getElementById("LabelDefensa");
+    LabelDefensa.innerHTML = "No hay registro";
+
+    const LabelAE = document.getElementById("LabelAE");
+    LabelAE.innerHTML = "No hay registro";
+
+    const LabelDE = document.getElementById("LabelDE");
+    LabelDE.innerHTML = "No hay registro";
+
+    const LabelVelocidad = document.getElementById("LabelVelocidad");
+    LabelVelocidad.innerHTML = "No hay registro";
 }
