@@ -171,8 +171,42 @@
     background: -o-radial-gradient(#b0fb7b, #50fb05);
 }
 
+.bisagra{
+    position: absolute;
+    left: 340px;
+    top: 50px;
+    width: 60px;
+    height: 470px;
+    float: right;
+    
+    background: linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);	
+    background: -webkit-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+    background: -moz-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+    background: -o-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+}
+
+.union1{
+    height: 40px;
+    background-color: #5e0000;
+    opacity: 0.3;
+    margin-top: 50px;
+    margin-bottom: 262px;
+
+    border-top: 2px solid #330000;
+    border-bottom: 2px solid #330000;
+}
+
+.union2{
+    height: 40px;
+    background-color: #5e0000;
+    opacity: 0.3;
+
+    border-top: 2px solid #330000;
+    border-bottom: 2px solid #330000;
+}
+
 .pantalla{
-    height: 245px;
+    height: 255px;
     width: 260px;
     padding: 0 20px;
     background-color: #b0b0b0;
@@ -186,6 +220,17 @@
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.pantalla:after{
+    content: "";
+    border-top: 40px solid #b0b0b0;
+    border-left: 40px solid #c00d0d;
+    height: 0;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .recuadroSuperior{
@@ -228,7 +273,7 @@
     width: 254px;
     margin-top: 20px;
     margin-bottom: 9px;
-    background-color: rgb(133, 133, 133);
+    background-color: #30da0c;
     border: 3px solid #494949;
     clear: both;
 
@@ -238,11 +283,342 @@
     -o-border-radius: 15px;
 }
 
+.botonPantalla{
+    height: 26px;
+    width: 26px;
+    background-color: #c00d0d;
+    margin-left: 35px;
+    float: left;
 
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
 
+    /*box-shadow: -2px 1px #5e0000;
+    -webkit-box-shadow: -2px 1px #5e0000;
+    -moz-box-shadow: -2px 1px #5e0000;
+    -o-box-shadow: -2px 1px #5e0000;*/
 
+    background: linear-gradient(top, #c00d0d 0%, #8b0000 80%);	
+    background: -webkit-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+    background: -moz-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+    background: -o-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+}
 
+.bocina{
+    float: right;
+    width: 75px;
+    height: 25px;
+    margin-right: 20px;
+}
 
+.lineaBocina{
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #494949;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.botonBuscar{
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+
+    position: absolute;
+    top: 405px;
+    left: 30px;
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+
+    background: linear-gradient(top, #307bfb 0%, #0530e5 80%);	
+    background: -webkit-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+    background: -moz-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+    background: -o-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+
+    cursor: pointer;
+    /*box-shadow: -3px 2px #001c91;
+    -webkit-box-shadow: -3px 2px #001c91;
+    -moz-box-shadow: -3px 2px #001c91;
+    -o-box-shadow: -3px 2px #001c91;*/
+}
+
+.botonVerde{
+    height: 13px;
+    width: 50px;
+
+    position: absolute;
+    top: 415px;
+    left: 100px;
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+
+    background: linear-gradient(top, #50fb05 0%, #057b05 100%);	
+    background: -webkit-linear-gradient(top, #50fb05 0%, #057b05 100%);
+    background: -moz-linear-gradient(top, #50fb05 0%, #057b05 100%);
+    background: -o-linear-gradient(top, #50fb05 0%, #057b05 100%);
+
+    /*box-shadow: -1px 2px #004200;
+    -webkit-box-shadow: -1px 2px #004200;
+    -moz-box-shadow: -1px 2px #004200;
+    -o-box-shadow: -1px 2px #004200;*/
+}
+
+.botonNaranja{
+    height: 13px;
+    width: 50px;
+
+    position: absolute;
+    top: 415px;
+    left: 165px;
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+
+    background: linear-gradient(top, #fb6505 0%, #bb0505 100%);	
+    background: -webkit-linear-gradient(top, #fb6505 0%, #bb0505 100%);
+    background: -moz-linear-gradient(top, #fb6505 0%, #bb0505 100%);
+    background: -o-linear-gradient(top, #fb6505 0%, #bb0505 100%);
+
+    /*box-shadow: -1px 2px #7b0000;
+    -webkit-box-shadow: -1px 2px #7b0000;
+    -moz-box-shadow: -1px 2px #7b0000;
+    -o-box-shadow: -1px 2px #7b0000;*/
+}
+
+.entradaPokemon{
+    position: absolute;
+    top: 445px;
+    left: 100px;
+    text-align: center;
+
+    width: 110px;
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #30da0c;
+    color: black;
+}
+
+h3, h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cruz{
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    top: 404px;
+    left: 230px;
+}
+
+.cruzIzquierda{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    z-index: 1;
+
+    position: absolute;
+    left: 0;
+    top: 30px;
+
+    /*box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;*/
+
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -o-border-bottom-left-radius: 5px;
+}
+
+.cruzTrianguloI{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #111;
+    border-bottom: 10px solid transparent;
+
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+.cruzArriba{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    /*box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;*/
+
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+}
+
+.cruzTrianguloAr{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #111;
+
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+.cruzDerecha{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    /*box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;*/
+
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -o-border-bottom-right-radius: 5px;
+}
+
+.cruzTrianguloD{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #111;
+    border-bottom: 10px solid transparent;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.cruzCentro{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    /*box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;*/
+}
+
+.centroCentro{
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 5px;
+    left: 4px;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+
+    background: radial-gradient(#111, #222);
+    background: -webkit-radial-gradient(#111, #222);
+    background: -moz-radial-gradient(#111, #222);
+    background: -o-radial-gradient(#111, #222);
+} 
+
+.cruzAbajo{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+
+    /*box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;*/
+
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -o-border-bottom-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -o-border-bottom-right-radius: 5px;
+}
+
+.cruzTrianguloAb{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #111;
+
+    position: absolute;
+    bottom: 5px;
+    left: 4px;
+}
 
 .tapa{
     position: absolute;
@@ -267,7 +643,7 @@
     position: absolute;
     top: 50px;
     left: -2px;
-    width: 227px;
+    width: 165px;
     height: 52px;
     background-color: #c00d0d;
     clip-path: polygon(
@@ -275,4 +651,138 @@
         100% 100%,
         0% 100%,
         0 0)
+}
+
+.informacion{
+    height: 155px;
+    width: 280px;
+    padding: 10px;
+    background-color: #30da0c;
+    z-index: 1;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+
+    position: absolute;
+    top: 30px;
+    left: 25px;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    /*box-shadow: 0 0 20px #003300 inset;
+    -webkit-box-shadow: 0 0 20px #003300 inset;
+    -moz-box-shadow: 0 0 20px #003300 inset;
+    -o-box-shadow: 0 0 20px #003300 inset;*/
+}
+
+.hNombre{
+    position: absolute;
+    left: 15px;
+}
+
+.pNombre{
+    position: absolute;
+    left: 110px;
+    top: 13px;
+    color: #5e0000;
+}
+
+.hTipo{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.pTipo1{
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    color: #5e0000;
+}
+
+.pTipo2{
+    position: absolute;
+    top: 30px;
+    left: 145px;
+    color: #5e0000;
+}
+
+.hPS{
+    position: absolute;
+    top: 49px;
+    left: 15px;
+}
+
+.pPS{
+    position: absolute;
+    top: 49px;
+    left: 175px;
+    color: #5e0000;
+}
+
+.hAtaque{
+    position: absolute;
+    top: 68px;
+    left: 15px;
+}
+
+.pAtaque{
+    position: absolute;
+    top: 68px;
+    left: 92px;
+    color: #5e0000;
+}
+
+.hDefensa{
+    position: absolute;
+    top: 87px;
+    left: 15px;
+}
+
+.pDefensa{
+    position: absolute;
+    top: 87px;
+    left: 102px;
+    color: #5e0000;
+}
+
+.hAE{
+    position: absolute;
+    top: 106px;
+    left: 15px;
+}
+
+.pAE{
+    position: absolute;
+    top: 106px;
+    left: 175px;
+    color: #5e0000;
+}
+
+.hDE{
+    position: absolute;
+    top: 125px;
+    left: 15px;
+}
+
+.pDE{
+    position: absolute;
+    top: 125px;
+    left: 183px;
+    color: #5e0000;
+}
+
+.hVelocidad{
+    position: absolute;
+    top: 144px;
+    left: 15px;
+}
+
+.pVelocidad{
+    position: absolute;
+    top: 144px;
+    left: 120px;
+    color: #5e0000;
 }

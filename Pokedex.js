@@ -49,14 +49,14 @@ function EntraIntOrString(NombrePoke, Datos){
 
 function MostrarNombre(NombreRegistrado){
     const LabelTituloPokemon = document.getElementById("LabelTituloPokemon");
-    LabelTituloPokemon.innerHTML = "Nombre";
+    LabelTituloPokemon.innerHTML = "Nombre:";
     const LabelNombrePokemon = document.getElementById("LabelNombrePokemon");
     LabelNombrePokemon.innerHTML = NombreRegistrado.charAt(0).toUpperCase() + NombreRegistrado.slice(1);
 }
 
 function MostrarNumero(NumeroRegistrado){
     const LabelTituloPokemon = document.getElementById("LabelTituloPokemon");
-    LabelTituloPokemon.innerHTML = "Numero";
+    LabelTituloPokemon.innerHTML = "Numero:";
     const LabelNombrePokemon = document.getElementById("LabelNombrePokemon");
     LabelNombrePokemon.innerHTML = NumeroRegistrado;
 }
@@ -233,6 +233,8 @@ function MostrarTipos(Datos){
         }
         Tipo2 = "";
     }
+    const LabelTipo = document.getElementById("LabelTipo");
+    LabelTipo.innerHTML = "Tipo:";
     const LabelTipo1 = document.getElementById("LabelTipo1");
     LabelTipo1.innerHTML = Tipo1;
     const LabelTipo2 = document.getElementById("LabelTipo2");
@@ -240,13 +242,33 @@ function MostrarTipos(Datos){
 }
 
 function MostrarTiposError(){
+    const LabelTipo = document.getElementById("LabelTipo");
+    LabelTipo.innerHTML = "Tipo:";
     const LabelTipo1 = document.getElementById("LabelTipo1");
-    LabelTipo1.innerHTML = "No hay registro";
+    LabelTipo1.innerHTML = "";
     const LabelTipo2 = document.getElementById("LabelTipo2");
-    LabelTipo2.innerHTML = "No hay registro";
+    LabelTipo2.innerHTML = "";
 }
 
 function MostrarEstadisticas(Datos){
+    const headLabelPS = document.getElementById("headPS");
+    headLabelPS.innerHTML = "Puntos de Salud:";
+
+    const headAtaque = document.getElementById("headAtaque");
+    headAtaque.innerHTML = "Ataque:";
+
+    const headDefensa = document.getElementById("headDefensa");
+    headDefensa.innerHTML = "Defensa:";
+
+    const headAE = document.getElementById("headAE");
+    headAE.innerHTML = "Ataque Especial:";
+
+    const headDE = document.getElementById("headDE");
+    headDE.innerHTML = "Defensa Especial:";
+
+    const headVelocidad = document.getElementById("headVelocidad");
+    headVelocidad.innerHTML = "Velocidad:";
+
     let PS = Datos.stats[0].base_stat;
     const LabelPS = document.getElementById("LabelPS");
     LabelPS.innerHTML = PS;
@@ -273,21 +295,39 @@ function MostrarEstadisticas(Datos){
 }
 
 function MostrarEstadisticasError(){
+    const headLabelPS = document.getElementById("headPS");
+    headLabelPS.innerHTML = "Puntos de Salud:";
+
+    const headAtaque = document.getElementById("headAtaque");
+    headAtaque.innerHTML = "Ataque:";
+
+    const headDefensa = document.getElementById("headDefensa");
+    headDefensa.innerHTML = "Defensa:";
+
+    const headAE = document.getElementById("headAE");
+    headAE.innerHTML = "Ataque Especial:";
+
+    const headDE = document.getElementById("headDE");
+    headDE.innerHTML = "Defensa Especial:";
+
+    const headVelocidad = document.getElementById("headVelocidad");
+    headVelocidad.innerHTML = "Velocidad:";
+
     const LabelPS = document.getElementById("LabelPS");
-    LabelPS.innerHTML = "No hay registro";
+    LabelPS.innerHTML = "";
 
     const LabelAtaque = document.getElementById("LabelAtaque");
-    LabelAtaque.innerHTML = "No hay registro";
+    LabelAtaque.innerHTML = "";
 
     const LabelDefensa = document.getElementById("LabelDefensa");
-    LabelDefensa.innerHTML = "No hay registro";
+    LabelDefensa.innerHTML = "";
 
     const LabelAE = document.getElementById("LabelAE");
-    LabelAE.innerHTML = "No hay registro";
+    LabelAE.innerHTML = "";
 
     const LabelDE = document.getElementById("LabelDE");
-    LabelDE.innerHTML = "No hay registro";
+    LabelDE.innerHTML = "";
 
     const LabelVelocidad = document.getElementById("LabelVelocidad");
-    LabelVelocidad.innerHTML = "No hay registro";
+    LabelVelocidad.innerHTML = "";
 }

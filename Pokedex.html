@@ -17,7 +17,10 @@
                 <div class="indicadorAmarillo"></div>
                 <div class="indicadorVerde"></div> 
             </div>
-                 
+            <div class="bisagra">
+                <div class="union1"></div>
+                <div class="union2"></div>
+            </div>
             <div class="parteInferior">
                 <div class="pantalla">
                     <div class="recuadroSuperior">
@@ -27,41 +30,62 @@
                     <div>
                         <img src="./PantallaInicio.png" alt="Pokemon" id="PictureBoxPokemon" class="imagenPokemon">
                     </div>
+                    <div class="botonPantalla"></div>
+                    <div class="bocina">
+                        <div class="lineaBocina"></div>
+                        <div class="lineaBocina"></div>
+                        <div class="lineaBocina"></div>
+                        <div class="lineaBocina"></div>
+                    </div>
+                </div>
+                <button onclick="ConsultarAPI()" class="botonBuscar"></button>
+                <div class="botonVerde"></div>
+                <div class="botonNaranja"></div>
+                <input type="text" placeholder="# Pokemon" id="TextBoxPokemon" name="TextBoxPokemon" class="entradaPokemon">
+                <div class="cruz">
+                    <div class="cruzIzquierda">
+                        <div class="cruzTrianguloI"></div>
+                    </div>
+                    <div class="cruzArriba">
+                        <div class="cruzTrianguloAr"></div>
+                    </div>
+                    <div class="cruzDerecha">
+                        <div class="cruzTrianguloD"></div>
+                    </div>
+                    <div class="cruzCentro">
+                        <div class="centroCentro"></div>
+                    </div>
+                    <div class="cruzAbajo">
+                        <div class="cruzTrianguloAb"></div>
+                    </div>
                 </div>
             </div>
-                
-
         </div>
         <div class="ladoDerecho">
-            <div class="tapa"></div>
+            <div class="tapa">
+                <div class="informacion">
+                    <h2 id="LabelTituloPokemon" name="LabelTituloPokemon" class="hNombre"></h2>
+                    <p id="LabelNombrePokemon" name="LabelNombrePokemon" class="pNombre"></p>
+                    <h3 class="hTipo" id="LabelTipo" name="LabelTipo"></h3>
+                    <p id="LabelTipo1" name="LabelTipo1" class="pTipo1"></p>
+                    <p id="LabelTipo2" name="LabelTipo2" class="pTipo2"></p>
+                    <h3 class="hPS" id="headPS" name="headPS"></h3>
+                    <p id="LabelPS" name="LabelPS" class="pPS"></p>
+                    <h3 class="hAtaque" id="headAtaque" name="headAtaque"></h3>
+                    <p id="LabelAtaque" name="LabelAtaque" class="pAtaque"></p>
+                    <h3 class="hDefensa" id="headDefensa" name="headDefensa"></h3>
+                    <p id="LabelDefensa" name="LabelDefensa" class="pDefensa"></p>
+                    <h3 class="hAE" id="headAE" name="headAE"></h3>
+                    <p id="LabelAE" name="LabelAE" class="pAE"></p>
+                    <h3 class="hDE" id="headDE" name="headDE"></h3>
+                    <p id="LabelDE" name="LabelDE" class="pDE"></p>
+                    <h3 class="hVelocidad" id="headVelocidad" name="headVelocidad"></h3>
+                    <p id="LabelVelocidad" name="LabelVelocidad" class="pVelocidad"></p>
+                </div>
+            </div>
             <div class="trapesoideDerecho"></div>
         </div>
     </div>
-
-
-    
-    <br>
-    <input type="text" placeholder="Nombre o numero del Pokemon" id="TextBoxPokemon" name="TextBoxPokemon">
-    <br>
-    <button onclick="ConsultarAPI()">Buscar Pokemon</button>
-    <h2 id="LabelTituloPokemon" name="LabelTituloPokemon">Nombre o Numero</h2>
-    <p id="LabelNombrePokemon" name="LabelNombrePokemon"></p>
-    <h2>Es tipo:</h2>
-    <p id="LabelTipo1" name="LabelTipo1"></p>
-    <p id="LabelTipo2" name="LabelTipo2"></p>
-    <h2>Estadísticas</h2>
-    <h3>Puntos de Salud</h3>
-    <p id="LabelPS" name="LabelPS"></p>
-    <h3>Ataque</h3>
-    <p id="LabelAtaque" name="LabelAtaque"></p>
-    <h3>Defensa</h3>
-    <p id="LabelDefensa" name="LabelDefensa"></p>
-    <h3>Ataque Especial</h3>
-    <p id="LabelAE" name="LabelAE"></p>
-    <h3>Defensa Especial</h3>
-    <p id="LabelDE" name="LabelDE"></p>
-    <h3>Velocidad</h3>
-    <p id="LabelVelocidad" name="LabelVelocidad"></p>
 </body>
 <footer>
     <script src="./Pokedex.js"></script>
